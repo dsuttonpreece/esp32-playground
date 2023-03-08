@@ -43,6 +43,7 @@ def main():
 
     import senko
     OTA = senko.Senko(user="dsuttonpreece", repo="esp32-playground",
+                      branch="main",
                       working_dir="app", files=["app.py"])
 
     if OTA.update():
