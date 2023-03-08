@@ -1,3 +1,3 @@
-"""Your main code goes here!"""
+from app.app import main
 
-print("Hello, world!")
+main()

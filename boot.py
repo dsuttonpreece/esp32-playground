@@ -39,16 +39,17 @@ def main():
 
     connect_wlan(WIFI_SSID, WIFI_PASSWORD)
 
-    # Install Senko from PyPi
     upip.install("micropython-senko")
 
     import senko
-    GITHUB_URL = "https://github.com/dsuttonpreece/esp32-playground/blob/main/"
-    OTA = senko.Senko(None, None, url=GITHUB_URL, files=["boot.py", "main.py"])
+    OTA = senko.Senko(user="dsuttonpreece", repo="esp32-playground",
+                      working_dir="app", files=["app.py"])
 
     if OTA.update():
         print("Updated to the latest version! Rebooting...")
         machine.reset()
+    else:
+        print("Already on the latest version!")
 
 
 if __name__ == "__main__":
