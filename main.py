@@ -1,3 +1,1 @@
-from app.app import main
-
-main()
+print("TESTING")
