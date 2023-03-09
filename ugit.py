@@ -14,7 +14,7 @@ import machine
 import time
 import network
 
-from secret import WIFI_PASSWORD, WIFI_SSID
+from secrets import WIFI_PASSWORD, WIFI_SSID
 
 global internal_tree
 
@@ -32,7 +32,7 @@ token = ''
 
 # Don't remove ugit.py from the ignore_files unless you know what you are doing :D
 # Put the files you don't want deleted or updated here use '/filename.ext'
-ignore_files = ['/ugit.py', '/secret.py']
+ignore_files = ['/ugit.py', '/secrets.py']
 ignore = ignore_files
 ### -----------END OF USER VARIABLES ----------####
 
