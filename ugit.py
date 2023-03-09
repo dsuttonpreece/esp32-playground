@@ -14,7 +14,7 @@ import machine
 import time
 import network
 
-from secrets import WIFI_PASSWORD, WIFI_SSID
+from secrets import WIFI_SSID, WIFI_PASSWORD
 
 global internal_tree
 
@@ -32,7 +32,7 @@ token = ''
 
 # Don't remove ugit.py from the ignore_files unless you know what you are doing :D
 # Put the files you don't want deleted or updated here use '/filename.ext'
-ignore_files = ['/ugit.py', '/secrets.py']
+ignore_files = ['/ugit.py']
 ignore = ignore_files
 ### -----------END OF USER VARIABLES ----------####
 
@@ -40,7 +40,7 @@ ignore = ignore_files
 # GitHub uses 'main' instead of master for python repository trees
 giturl = 'https://github.com/{user}/{repository}'
 call_trees_url = f'https://api.github.com/repos/{user}/{repository}/git/trees/main?recursive=1'
-raw = f'https://raw.githubusercontent.com/{user}/{repository}/main/'
+raw = f'https://raw.githubusercontent.com/{user}/{repository}/master/'
 
 
 def pull(f_path, raw_url):
