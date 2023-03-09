@@ -1,3 +1,3 @@
 def start():
-    from .routines.led_blink import blink
-    blink()
+    from .routines.stepper_motor import test_stepper
+    test_stepper()
