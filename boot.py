@@ -42,8 +42,9 @@ def main():
     upip.install("micropython-senko")
 
     import senko
-    OTA = senko.Senko(user="dsuttonpreece", repo="esp32-playground",
-                      branch="main",
+    GITHUB_URL = "https://raw.githubusercontent.com/dsuttonpreece/esp32-playground/main/app"
+    OTA = senko.Senko(None, None,
+                      url=GITHUB_URL,
                       working_dir="app", files=["app.py"])
 
     if OTA.update():
