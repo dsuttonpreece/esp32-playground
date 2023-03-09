@@ -1,2 +1,2 @@
 def start():
-    print("RESLEASE #1: START APP")
+    print("RESLEASE #2: START APP")
