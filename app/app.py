@@ -1,2 +1,2 @@
 def main():
-    print("Another test 3")
+    print("Test 1")
