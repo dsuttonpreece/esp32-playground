@@ -1,2 +1,3 @@
 def start():
-    print("RESLEASE #3: START APP")
+    import routines.led_blink
+    routines.led_blink.blink()
