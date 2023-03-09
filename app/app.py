@@ -1,3 +1,3 @@
 def start():
-    import routines.led_blink
-    routines.led_blink.blink()
+    from routines.led_blink import blink
+    blink()
