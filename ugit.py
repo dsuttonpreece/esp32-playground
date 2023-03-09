@@ -40,7 +40,7 @@ ignore = ignore_files
 # GitHub uses 'main' instead of master for python repository trees
 giturl = 'https://github.com/{user}/{repository}'
 call_trees_url = f'https://api.github.com/repos/{user}/{repository}/git/trees/main?recursive=1'
-raw = f'https://raw.githubusercontent.com/{user}/{repository}/master/'
+raw = f'https://raw.githubusercontent.com/{user}/{repository}/main/'
 
 
 def pull(f_path, raw_url):
